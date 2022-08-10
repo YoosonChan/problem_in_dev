@@ -1,6 +1,6 @@
 # TypeScript问题
 
-## [ts中`!`和`?`的用法](https://www.jianshu.com/p/dd304d5cb3dc)
+## [TypeScript中`!`和`?`的用法](https://www.jianshu.com/p/dd304d5cb3dc) <a href="#typescript-zhong-he-de-yong-fa" id="typescript-zhong-he-de-yong-fa"></a>
 
 !用法 用在变量前表示取反 用在赋值的内容后时，使null和undefined类型可以赋值给其他类型并通过编译
 
@@ -77,12 +77,27 @@ for (k in obj) {
 }
 ```
 
-## ts忽略类型检查
+
+
+## TypeScript忽略类型检查
 
 添加`// @ts-nocheck`注释来跳过对某些文件的检查；
 
 添加`// @ts-check`注释只检查一些.js文件而不需要设置`--checkJs`编译选项；
 
 添加`// @ts-ignore`到特定行的一行前来忽略这一行的错误。
+
+## TypeScript对象中key键类型声明处理
+
+使用`[]`来声明`key`的类型
+
+```javascript
+const data: { [key: number]: string } = {
+ 1: 'a',
+ 2: 'b'
+}
+```
+
+
 
 ##
